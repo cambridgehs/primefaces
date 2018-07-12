@@ -47,7 +47,7 @@ public class RowEditorRenderer extends CoreRenderer {
     }
 
     protected void encodeIcon(ResponseWriter writer, String type, String title) throws IOException {
-        String iconClass = "ui-icon ui-icon-" + type;
+        String iconClass = "fa fa-" + type + " fa-fw";
         iconClass = ("pencil".equals(type)) ? iconClass : iconClass + " ui-c";
 
         writer.startElement("a", null);
