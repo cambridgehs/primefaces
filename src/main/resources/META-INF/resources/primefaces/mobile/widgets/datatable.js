@@ -49,7 +49,7 @@ PrimeFaces.widget.DataTable = PrimeFaces.widget.BaseWidget.extend({
             sortIcon = columnHeader.children('span.ui-sortable-column-icon'),
             sortOrder = null;
     
-            if(sortIcon.hasClass('ui-column-sorted')) {
+            if(sortIcon.parents('.ui-column-sorted').length) {
                 if(sortIcon.hasClass('ui-icon-arrow-u'))
                     sortOrder = this.SORT_ORDER.ASCENDING;
                 else
